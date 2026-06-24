@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic page setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sabari R | Portfolio</title>
+
+  <!-- CSS file link -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background particles will be created using JavaScript -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Header / Navbar -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home" class="logo">
+        <span>S</span>abari
+      </a>
+
+      <!-- Navigation links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#learning" class="nav-link">Learning</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Mobile hamburger button -->
+      <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Home / Hero Section -->
+  <section class="hero section" id="home">
+    <div class="hero-content reveal">
+      <p class="badge">🚀 Docker-ready Portfolio</p>
+
+      <h1>
+        Hi, I'm <span>Sabari R</span>
+      </h1>
+
+      <h2>AI & Data Science Student | Cloud Enthusiast | Future Cloud Engineer</h2>
+
+      <p class="hero-text">
+        I build clean, modern web projects and I am learning Cloud Computing,
+        AI, Docker, Azure, and full-stack web development.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary-btn">View Projects</a>
+        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <h3>04+</h3>
+          <p>Projects</p>
+        </div>
+        <div>
+          <h3>10+</h3>
+          <p>Skills</p>
+        </div>
+        <div>
+          <h3>Cloud</h3>
+          <p>Focused</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile image -->
+    <div class="hero-image reveal">
+      <div class="profile-card">
+        <div class="profile-ring">
+          <!-- Put your photo here: assets/profile.jpg -->
+          <img src="./assets/profile.jpg" alt="Sabari R profile image" class="profile-img" />
+          <div class="profile-fallback">SR</div>
+        </div>
+
+        <div class="floating-card top-card">☁️ Azure</div>
+        <div class="floating-card bottom-card">🐳 Docker</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="section-title reveal">
+      <p>About Me</p>
+      <h2>Who I Am</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="glass-card about-card reveal">
+        <h3>👋 Hello!</h3>
+        <p>
+          I am Sabari R, a B.E. AI & Data Science student with strong interest
+          in Cloud Computing, AI, Docker, Azure, and modern web development.
+          I enjoy building practical projects that connect technology with
+          real-world use cases.
+        </p>
+      </div>
+
+      <div class="glass-card about-card reveal">
+        <h3>🎯 My Goal</h3>
+        <p>
+          My goal is to become a skilled Cloud Engineer by learning deployment,
+          containerization, GitHub workflow, Azure services, and AI-based
+          project development.
+        </p>
+      </div>
+
+      <div class="glass-card about-card reveal">
+        <h3>⚡ Current Focus</h3>
+        <p>
+          I am currently building a Dockerized personal portfolio, ResumeGenius AI,
+          Cloud Attendance System, and AI Crop Recommendation System to strengthen
+          my resume and internship profile.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="section-title reveal">
+      <p>My Skills</p>
+      <h2>Technologies I Am Learning</h2>
+    </div>
+
+    <div class="skills-grid reveal">
+      <div class="skill-card">🌐 HTML</div>
+      <div class="skill-card">🎨 CSS</div>
+      <div class="skill-card">⚙️ JavaScript</div>
+      <div class="skill-card">🐍 Python</div>
+      <div class="skill-card">☕ Java</div>
+      <div class="skill-card">🐙 GitHub</div>
+      <div class="skill-card">🐳 Docker</div>
+      <div class="skill-card">☁️ Azure</div>
+      <div class="skill-card">🌩️ Cloud Computing</div>
+      <div class="skill-card">🤖 AI Basics</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="section-title reveal">
+      <p>Projects</p>
+      <h2>Featured Work</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card reveal">
+        <div class="project-image">
+          <!-- Put image here: assets/portfolio.png -->
+          <img src="assets/portfolio.png" alt="Dockerized Personal Portfolio project image" />
+          <div class="image-fallback">Portfolio Preview</div>
+        </div>
+
+        <div class="project-info">
+          <h3>Dockerized Personal Portfolio</h3>
+          <p>
+            A premium responsive portfolio built using HTML, CSS, and JavaScript,
+            containerized with Docker and ready for Azure deployment.
+          </p>
+
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+            <span>Docker</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#" class="small-btn">GitHub</a>
+            <a href="#" class="small-btn">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal">
+        <div class="project-image">
+          <!-- Put image here: assets/resumegenius.png -->
+          <img src="assets/resumegenius.png" alt="ResumeGenius AI project image" />
+          <div class="image-fallback">ResumeGenius AI</div>
+        </div>
+
+        <div class="project-info">
+          <h3>ResumeGenius AI</h3>
+          <p>
+            An AI-powered resume builder project designed to help users create
+            clean and professional resumes with smart suggestions.
+          </p>
+
+          <div class="tags">
+            <span>AI</span>
+            <span>Web</span>
+            <span>Node</span>
+            <span>Cloud</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#" class="small-btn">GitHub</a>
+            <a href="#" class="small-btn">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal">
+        <div class="project-image">
+          <!-- Put image here: assets/cloud-attendance.png -->
+          <img src="assets/cloud-attendance.png" alt="Cloud Attendance System project image" />
+          <div class="image-fallback">Cloud Attendance</div>
+        </div>
+
+        <div class="project-info">
+          <h3>Cloud Attendance System</h3>
+          <p>
+            A cloud-based attendance system idea using login, GPS, and hostel Wi-Fi
+            validation for student attendance management.
+          </p>
+
+          <div class="tags">
+            <span>Firebase</span>
+            <span>Cloud</span>
+            <span>Auth</span>
+            <span>GPS</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#" class="small-btn">GitHub</a>
+            <a href="#" class="small-btn">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card reveal">
+        <div class="project-image">
+          <!-- Put image here: assets/crop-ai.png -->
+          <img src="assets/crop-ai.png" alt="AI Crop Recommendation System project image" />
+          <div class="image-fallback">AI Crop System</div>
+        </div>
+
+        <div class="project-info">
+          <h3>AI Crop Recommendation System</h3>
+          <p>
+            A smart agriculture project concept that recommends crops using
+            weather, soil, disease detection, and market information.
+          </p>
+
+          <div class="tags">
+            <span>AI</span>
+            <span>Weather</span>
+            <span>MongoDB</span>
+            <span>Charts</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#" class="small-btn">GitHub</a>
+            <a href="#" class="small-btn">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certifications / Learning Section -->
+  <section class="section" id="learning">
+    <div class="section-title reveal">
+      <p>Learning</p>
+      <h2>Certifications & Practice</h2>
+    </div>
+
+    <div class="learning-grid">
+      <div class="glass-card learning-card reveal">
+        <h3>☁️ AWS Cloud Practitioner Essentials</h3>
+        <p>Learning cloud fundamentals, AWS services, global infrastructure, and shared responsibility.</p>
+      </div>
+
+      <div class="glass-card learning-card reveal">
+        <h3>🌐 Cisco Networking Essentials</h3>
+        <p>Practicing networking basics, internet concepts, protocols, and connected devices.</p>
+      </div>
+
+      <div class="glass-card learning-card reveal">
+        <h3>🔷 Azure Student Subscription Practice</h3>
+        <p>Using Azure free/student subscription to practice deployment and cloud services.</p>
+      </div>
+
+      <div class="glass-card learning-card reveal">
+        <h3>🤖 Generative AI Internship</h3>
+        <p>Building AI-related tasks and improving project-based learning experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="section-title reveal">
+      <p>Contact</p>
+      <h2>Let's Connect</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-box">
+          <h3>📧 Email</h3>
+          <p>
+            <a href="mailto:kingsabari438@gmail.com">
+                kingsabari438@gmail.com
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <h3>🐙 GitHub</h3>
+          <p>
+            <a href="https://github.com/kingsabari438-cpu" target="_blank">
+              github.com/kingsabari438-cpu
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <h3>💼 LinkedIn</h3>
+          <p>
+            <a href="https://linkedin.com/in/r-sabari-ab4a1130b" target="_blank">
+              linkedin.com/in/r-sabari-ab4a1130b
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact form UI only. No backend. -->
+      <form class="contact-form reveal" id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Sabari R. Built with HTML, CSS, JavaScript, Docker-ready.</p>
+  </footer>
+
+  <!-- JavaScript file link -->
+  <script src="script.js"></script>
+</body>
+</html>
