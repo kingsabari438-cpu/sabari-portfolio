@@ -287,12 +287,14 @@
       <h2>Certifications & Practice</h2>
     </div>
 
-    <div class="learning-grid">
-      <div class="glass-card learning-card reveal">
-        <h3>☁️ AWS Cloud Practitioner Essentials</h3>
-        <p>Learning cloud fundamentals, AWS services, global infrastructure, and shared responsibility.</p>
-        <img src="aws-academy-graduate-cloud-foundations-training-bad.png" alt="AWS logo" class="cert-logo" />
-      </div>
+    <div class="glass-card learning-card reveal">
+  <h3>☁️ AWS Cloud foundations</h3>
+  <p>Learning cloud fundamentals, AWS services, global infrastructure, and shared responsibility.</p>
+
+  <button class="cert-btn" data-cert="./assets/certificates/AWS_Academy_Graduate___Cloud_Foundations___Training_Badge_Badge20260623-30-70ujxq">
+    View Certificate
+  </button>
+</div>
 
       <div class="glass-card learning-card reveal">
         <h3>🌐 Cisco Networking Essentials</h3>
@@ -356,6 +358,13 @@
         <button type="submit" class="btn primary-btn">Send Message</button>
       </form>
     </div>
+    <!-- Certificate Preview Modal -->
+<div class="cert-modal" id="certModal">
+  <div class="cert-modal-box">
+    <button class="cert-close" id="certClose">×</button>
+    <iframe id="certFrame" src="" title="Certificate Preview"></iframe>
+  </div>
+</div>
   </section>
 
   <!-- Footer -->

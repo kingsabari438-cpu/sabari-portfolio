@@ -853,3 +853,72 @@ body::before {
     text-align: center;
   }
 }
+/* Certificate button */
+.cert-btn {
+  margin-top: 18px;
+  padding: 11px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0.18), rgba(139, 92, 246, 0.18));
+  color: #e0f7ff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cert-btn:hover {
+  transform: translateY(-3px);
+  border-color: rgba(56, 189, 248, 0.8);
+  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.22);
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0.30), rgba(139, 92, 246, 0.30));
+}
+
+/* Certificate modal */
+.cert-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 8, 22, 0.82);
+  backdrop-filter: blur(12px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 20px;
+}
+
+.cert-modal.show {
+  display: flex;
+}
+
+.cert-modal-box {
+  position: relative;
+  width: min(900px, 100%);
+  height: min(650px, 85vh);
+  border-radius: 24px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.45);
+}
+
+.cert-modal-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: white;
+}
+
+.cert-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(244, 63, 94, 0.95);
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+}

@@ -121,3 +121,38 @@ for (let i = 0; i < particleCount; i++) {
 
   particlesContainer.appendChild(particle);
 }
+// Certificate preview modal
+const certButtons = document.querySelectorAll(".cert-btn");
+const certModal = document.getElementById("certModal");
+const certFrame = document.getElementById("certFrame");
+const certClose = document.getElementById("certClose");
+
+certButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const certPath = button.getAttribute("data-cert");
+
+    certFrame.src = certPath;
+    certModal.classList.add("show");
+    document.body.style.overflow = "hidden";
+  });
+});
+
+function closeCertificate() {
+  certModal.classList.remove("show");
+  certFrame.src = "";
+  document.body.style.overflow = "auto";
+}
+
+certClose.addEventListener("click", closeCertificate);
+
+certModal.addEventListener("click", (event) => {
+  if (event.target === certModal) {
+    closeCertificate();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && certModal.classList.contains("show")) {
+    closeCertificate();
+  }
+});
