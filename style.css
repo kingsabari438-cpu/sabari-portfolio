@@ -595,11 +595,16 @@ body::before {
 /* Learning section */
 .learning-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
+  align-items: stretch;
 }
 
 .learning-card {
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: 0.3s ease;
 }
 
@@ -610,11 +615,13 @@ body::before {
 
 .learning-card h3 {
   margin-bottom: 12px;
+  font-size: 1.2rem;
 }
 
 .learning-card p {
   color: var(--muted);
   line-height: 1.7;
+  margin-bottom: 18px;
 }
 
 /* Contact */
@@ -761,6 +768,9 @@ body::before {
 
 /* Mobile responsive */
 @media (max-width: 720px) {
+  .learning-grid {
+    grid-template-columns: 1fr;
+  }
   .navbar {
     padding: 16px 18px;
   }
@@ -855,8 +865,9 @@ body::before {
 }
 /* Certificate button */
 .cert-btn {
-  margin-top: 18px;
-  padding: 11px 16px;
+  width: fit-content;
+  margin-top: auto;
+  padding: 11px 17px;
   border-radius: 999px;
   border: 1px solid rgba(56, 189, 248, 0.35);
   background: linear-gradient(90deg, rgba(56, 189, 248, 0.18), rgba(139, 92, 246, 0.18));
@@ -872,7 +883,6 @@ body::before {
   box-shadow: 0 15px 35px rgba(56, 189, 248, 0.22);
   background: linear-gradient(90deg, rgba(56, 189, 248, 0.30), rgba(139, 92, 246, 0.30));
 }
-
 /* Certificate modal */
 .cert-modal {
   position: fixed;
